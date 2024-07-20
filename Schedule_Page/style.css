@@ -111,6 +111,48 @@ body{
     transform: translateY(1px); /* Simulates the button being pressed down */
   }
 
+
+/* Initial state: .event-detail is hidden */
+.event-card .event-detail {
+    /* Initial styles for .event-detail */
+    display: none;
+}
+
+/* Add this class for blurring */
+.event-card.blur {
+    filter: blur(4px);
+}
+
+
+/* Style for .event-detail when it's focused and visible */
+.event-detail.focused {
+    visibility: visible;
+    filter: none; /* Ensure it's not blurred */
+    position: relative; /* Adjust based on layout needs */
+    background-color: #fff; /* Background to ensure readability */
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    margin-top: 20px; /* Space from the blurred cards */
+    border: 2px solid black;
+    height: 40vh;
+    width: 40vw;
+    
+}
+
+.each-day-column .event-detail {
+    visibility: visible;
+    position: absolute;
+    top: 6%;
+    /* left: 0; */
+    max-width: 100%;
+    z-index: 10;
+    background-color: white; /* Example: Ensure it has a visible background */
+    color: black; /* Example: Ensure text is visible */
+    /* Ensure there's a minimum height */
+    min-height: 20px; /* Adjust as needed */
+}
+
 @media(max-width:771px){
     .event-card{
         width: 90%;
