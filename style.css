@@ -318,8 +318,38 @@ body{
 .keynote-speaker-container .speaker-card .speaker-image:hover img{
     transform: scale(1.1);
 }
+
+.margin-slider{
+    margin-left: 1.5vw !important;
+    margin-right: 1.5vw !important;
+}
+
+.width-slide{
+    width: 28.4vw !important;
+    height: 28.6vw !important;
+}
+
+.campus-highlights{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.2vw 1vw;
+
+}
+
+.campus-highlights-heading{
+    font-family: 'Instrument Regular';
+    font-size: 7vw;
+    letter-spacing: 0.33vw;
+    font-weight: bold;
+    margin-bottom: 1vw;
+}
+
+
 @media(max-width:1208px){
     .section-2-welcome .welcome-4{
         right: 0.9vw;
     }
 }
+
