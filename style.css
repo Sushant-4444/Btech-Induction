@@ -93,7 +93,7 @@ body{
 }
 
 .section-2-welcome .transparent-square-welcome p{
-    font-family: 'Instrument Regular';
+    font-family: 'Instrument Sans Regular';
     font-size: 1.8vw;
     margin-top: 2.4vw;
 }
@@ -158,9 +158,10 @@ body{
    
 }
 .keynote-speaker-heading{
-    font-family: 'Instrument Medium';
-    font-size: 5vw;
-    letter-spacing: 2px;
+    font-family: 'Instrument Regular';
+    font-size: 7vw;
+    letter-spacing: 0.33vw;
+    font-weight: bold;
 }
 
 .keynote-speaker-container{
@@ -191,7 +192,7 @@ body{
 }
 .keynote-speaker-container .speaker-card .speaker-position{
     font-size: 1.45vw;
-    font-family: 'Instrument Regular';
+    font-family: 'Instrument Sans Regular';
     text-align: center;
     padding: 0.5vw 0.5vw;
 
