@@ -20,17 +20,19 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(28, 28, 28, 0.8);
     border-radius: 2vw;
-    padding: 0.6vw 1.2vw;
+    /* padding: 0.6vw 1.2vw; */
     font-size: 1vw;
     font-family: 'Instrument Regular';
+    width: 23.2vw;
+    height: 2.77vw;
 }
 
 .curved-bar a {
     color: #fff;
     text-decoration: none;
-    margin: 0 1.5vw;
+    /* margin: 0 1.5vw; */
     padding: 0.5vw 1vw;
     border-radius: 1vw;
     transition: background-color 0.3s;
@@ -44,12 +46,14 @@ body{
     width :6.54vw;
     height: 3.43vw;
     margin-left: 1vw;
+    margin-top: 1.8vw;
 }
 
 .header img:last-child {
     margin-right: 1vw;
     width : 9.58vw;
     height: 3.7vw;
+    margin-top: 1.8vw;
 }
 
 .section-2-welcome {
