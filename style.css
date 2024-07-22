@@ -347,6 +347,66 @@ body{
 }
 
 
+
+
+.slider-container {
+    width: 75vw;
+    height: 44.8vw;
+  }
+
+  
+  .slider {
+    overflow: hidden;
+    width: 100%; /* Ensure the slider takes full width */
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    min-width: 32%; /* Each slide takes up 25% of the container */
+    /* height: 45vh; */
+    box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+    margin: 0.5vw;
+  }
+  .margin-right-4px{
+    margin-right: 4px;
+  }
+  
+  .slide img {
+    width: 100%; /* Make images stretch to fill the .slide */
+    height: auto; /* Keep image aspect ratio */
+  }
+
+  .slider-wrapper{
+    display: flex;
+
+  }
+
+  .next{
+    position: relative;
+    top: -15vw;
+    left: 69vw;
+    font-size: 2vw;
+    background-color:rgba(28, 28, 28, 0.8);
+    color:#fff;
+    border: none;
+    z-index: 5;
+  }
+
+  .prev{
+    position: relative;
+    top: 11.5vw;
+    left: 5vw;
+    font-size: 2vw;
+    background-color:rgba(28, 28, 28, 0.8);
+    color:#fff;
+    border: none;
+    z-index: 5;
+  }
+
 @media(max-width:1208px){
     .section-2-welcome .welcome-4{
         right: 0.9vw;

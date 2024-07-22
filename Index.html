@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INDUCTION 24 | HOME</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="icon" href="IMAGES/iiitdlogo.png">
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
@@ -95,7 +94,7 @@
 
     <div class="campus-highlights">
         <h1 class="campus-highlights-heading"><span style="font-family: 'Instrument Italic'; font-weight:100; display:block;letter-spacing: normal;line-height: 4vw;font-weight: lighter;">&nbsp;&nbsp;Campus</span>Highlights</h1>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -120,12 +119,31 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
-          </div>
+          </div> -->
+          <div class="slider-wrapper">
+            <div>
+            <button class="prev prev-1" onclick="prevSlide()">&nbsp;&nbsp;&#10094;&nbsp;&nbsp;</button>
+
+        </div>
+          <div class="slider-container">
+            <div class="slider">
+              <div class="slides">
+                <!-- Each image in its own .slide div -->
+                <div class="slide"><img src="Images/speaker-2.png" alt="speaker 1"></div>
+                <div class="slide"><img src="Images/speaker-2.png" alt="speaker 2"></div>
+                <div class="slide"><img src="Images/speaker-2.png" alt="speaker 3"></div>
+                <div class="slide"><img src="Images/speaker-2.png" alt="speaker 4"></div>
+                <div class="slide"><img src="Images/speaker-2.png" alt="speaker 5"></div>
+                <!-- <div class="slide"><img src="Images/speaker-2.png" alt="speaker 6"></div> -->
+               
+                <!-- Add more .slide divs as needed -->
+              </div>
+              <button class="next next-1" onclick="nextSlide()">&nbsp;&nbsp;&#10095;&nbsp;&nbsp;</button>
+              
+            </div>
+        </div>
+        </div>
     </div>
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
