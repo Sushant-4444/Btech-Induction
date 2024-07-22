@@ -17,6 +17,10 @@ body{
 }
 
 .curved-bar {
+    position: fixed;
+    top: 3vw;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,6 +31,7 @@ body{
     font-family: 'Instrument Regular';
     width: 23.2vw;
     height: 2.77vw;
+    z-index: 10;
 }
 
 .curved-bar a {
