@@ -61,6 +61,108 @@ body{
     margin-top: 1.8vw;
 }
 
+.content{
+    display: flex;
+    /* justify-content: space-between; */
+    width: 100%;
+    flex-direction: column;
+    height: 52.7vw;
+    align-items: center;
+}
+
+.content .main-head{
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 6.08vw;
+}
+
+.content .message{
+    margin: 3vw 0 4vw 13vw;
+    width: 24.19vw;
+    height: 3.10vw;
+    font-size: 1vw;
+}
+
+/* .content .explore-button{
+    width: 11.96vw;
+    height: 3.7vw;
+    border-radius:6.609vw;
+    font-size: 1vw;
+
+} */
+.content .explore-button {
+    width: 11.96vw;
+    height: 3.7vw;
+    border-radius: 6.609vw;
+    font-size: 1vw;
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.4s ease;
+    padding-right: 0.7vw;
+}
+
+.content .explore-button .arrow-left,
+.content .explore-button .arrow-right {
+    position: absolute;
+    transition: all 0.4s ease;
+}
+
+.content .explore-button .arrow-left {
+    left: -30px;
+    opacity: 0;
+}
+
+.content .explore-button .arrow-right {
+    right: 10px;
+}
+
+.content .explore-button .text {
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.content .explore-button:hover .text {
+    transform: translateX(20px);
+}
+
+.content .explore-button:hover .arrow-left {
+    left: 10px;
+    opacity: 1;
+}
+
+.content .explore-button:hover .arrow-right {
+    right: -30px;
+    opacity: 0;
+}
+
+/* .content .explore-button .left-side-arrow{
+    
+} */
+
+.content .explore-button:hover{
+    cursor: pointer;
+}
+
+
+
+.iiitd {
+    font-size: 4vw;
+    font-family: 'Instrument Medium';
+
+}
+
+.welcomes {
+    font-size: 4vw;
+    font-family: 'Instrument Medium';
+}
+
 .section-2-welcome {
     position : relative;
     background-image: url('./IMAGES/image\ 39.png');
@@ -209,7 +311,7 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease; /* Smooth transition for scaling */
+    transition: transform 0.5s ease-in; /* Smooth transition for scaling */
 }
 
 .keynote-speaker-container .speaker-card .speaker-image:hover img{
