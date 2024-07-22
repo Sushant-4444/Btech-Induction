@@ -18,12 +18,12 @@
 
 @font-face {
     font-family: 'Instrument Regular';
-    src: url('./FONTS/InstrumentSans-Regular.ttf');
+    src: url('./FONTS/instrumentserif-regular.ttf');
 }
 
 @font-face {
     font-family: 'Instrument italic';
-    src: url('./FONTS/InstrumentSans-Italic.ttf');
+    src: url('./FONTS/instrumentserif-italic.ttf');
 }
 
 @font-face {
@@ -49,4 +49,9 @@
 @font-face {
     font-family: 'Helvetica Italic';
     src: url('./FONTS/HelveticaNeueItalic.ttf');
+}
+
+@font-face {
+    font-family: 'Instrument Sans Regular';
+    src: url(./FONTS/InstrumentSans-Regular.ttf);
 }
