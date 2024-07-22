@@ -10,6 +10,7 @@ body{
 }
 
 .section-2-welcome {
+    position : relative;
     background-image: url('./IMAGES/image\ 39.png');
     background-size:cover;
     background-position: center;
@@ -26,7 +27,7 @@ body{
     height: 36vw;
     background-color: rgba(28, 28, 28, 0.8);
     backdrop-filter: blur(4px);
-    border-radius: 10px;
+    border-radius: 15px;
     display: flex;
     flex-direction: column;
     padding: 3.2vw 5.2vw;
