@@ -18,7 +18,7 @@ body{
 
 .curved-bar {
     position: fixed;
-    top: 3vw;
+    top: 2vw;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
