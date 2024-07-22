@@ -387,7 +387,7 @@ body{
 
   .next{
     position: relative;
-    top: -15vw;
+    top: -13.37vw;
     left: 69vw;
     font-size: 2vw;
     background-color:rgba(28, 28, 28, 0.8);
@@ -398,7 +398,7 @@ body{
 
   .prev{
     position: relative;
-    top: 11.5vw;
+    top: 12.09vw;
     left: 5vw;
     font-size: 2vw;
     background-color:rgba(28, 28, 28, 0.8);
