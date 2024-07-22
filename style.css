@@ -35,5 +35,11 @@ body{
 .section-2-welcome .transparent-square-welcome h1{
    font-family: 'Instrument Regular';
    /* line-height: 5.6vw; */
-   font-size: 5.2vw;
+   font-size: 4.4vw;
+}
+
+.section-2-welcome .transparent-square-welcome p{
+    font-family: 'Instrument Regular';
+    font-size: 1.8vw;
+    margin-top: 2.4vw;
 }
