@@ -63,6 +63,7 @@ body{
     z-index: 1;
 }
 .event-card{
+    /* position: relative; */
     min-height: 170px;
     max-width: 350px;
     width: 47%;
@@ -128,7 +129,7 @@ body{
 .event-detail.focused {
     visibility: visible;
     filter: none; /* Ensure it's not blurred */
-    position: relative; /* Adjust based on layout needs */
+    /* position: ; Adjust based on layout needs */
     background-color: #fff; /* Background to ensure readability */
     padding: 10px;
     border-radius: 5px;

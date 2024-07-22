@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Clash Display';
+    src: url("./FONTS/ClashDisplay-Bold.otf");
+}
+@font-face {
+    font-family: 'SF PRO TEXT';
+    src: url('./FONTS/FontsFree-Net-SFProText-Bold.ttf');
+}
+@font-face {
+    font-family: 'DRUK CORD TRIAL SUPER';
+    src: url('./FONTS/DrukCond-Super-Trial.otf');
+}
+
+@font-face {
+    font-family: 'SF PRO TEXT REGULAR';
+    src: url('./FONTS/FontsFree-Net-SFProText-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Instrument Regular';
+    src: url('./FONTS/InstrumentSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Instrument italic';
+    src: url('./FONTS/InstrumentSans-Italic.ttf');
+}
+
+@font-face {
+    font-family: 'Instrument medium';
+    src: url('./FONTS/InstrumentSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Avenir Black';
+    src: url('./FONTS/AvenirLTStd-Black.otf');
+}
+
+@font-face {
+    font-family: 'Avenir Book';
+    src: url('./FONTS/AvenirLTStd-Book.otf');
+}
+
+@font-face {
+    font-family: 'Avenir Roman';
+    src: url('./FONTS/AvenirLTStd-Roman.otf');
+}
+
+@font-face {
+    font-family: 'Helvetica Italic';
+    src: url('./FONTS/HelveticaNeueItalic.ttf');
+}

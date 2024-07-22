@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #1E1E1E;
+    color: white;
+}
+
+.section-2-welcome {
+    background-image: url('./IMAGES/image\ 39.png');
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60.61vw;
+    width: 100%;
+    
+}
+
+.section-2-welcome .transparent-square-welcome{
+    width: 52vw;
+    height: 36vw;
+    background-color: rgba(28, 28, 28, 0.8);
+    /* backdrop-filter: blur(10px); */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 3.2vw 5.2vw;
+}
+
+.section-2-welcome .transparent-square-welcome h1{
+   font-family: 'Instrument Regular';
+   /* line-height: 5.6vw; */
+   font-size: 5.2vw;
+}
