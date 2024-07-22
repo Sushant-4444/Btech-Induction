@@ -13,13 +13,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.7vw;
-    background-color: #1c1c1c;
-}
-
-.header img {
-    width: 7vw;
-    height: 4vw;
+    height: 7.5vw;
 }
 
 .curved-bar {
@@ -27,7 +21,6 @@ body{
     justify-content: center;
     align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
-    color: #fff;
     border-radius: 2vw;
     padding: 0.6vw 1.2vw;
     font-size: 1vw;
@@ -48,11 +41,15 @@ body{
 }
 
 .header img:first-child {
+    width :6.54vw;
+    height: 3.43vw;
     margin-left: 1vw;
 }
 
 .header img:last-child {
     margin-right: 1vw;
+    width : 9.58vw;
+    height: 3.7vw;
 }
 
 .section-2-welcome {
