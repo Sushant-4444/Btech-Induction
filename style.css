@@ -68,6 +68,75 @@ body{
     flex-direction: column;
     height: 52.7vw;
     align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.content .plane-img{
+    position: absolute;
+    left: 100vw;
+    width: 16.19vw;
+    height:16.19vw;
+    /* z-index: -1; */
+    transition: all 1s ease;
+
+}
+
+.content .boy-2-img{
+    position: absolute;
+    left: 100vw;
+    top: 15vw;
+    width: 12.49vw;
+    height:14.40vw;
+    /* z-index: -1; */
+    transition: all 1s ease;
+
+}
+.content .boy-img{
+    position: absolute;
+    left:22vw;
+    top:49vw ;
+    width: 21.8vw;
+    height:21.8vw;
+    /* z-index: -1; */
+    transition: all 1s ease;
+
+}
+
+.content .girl-img{
+    position: absolute;
+    left:-13vw;
+    top:21vw ;
+    width: 18.1vw;
+    height:18.1vw;
+    /* z-index: -1; */
+    transition: all 1s ease;
+
+}
+
+.content:hover .girl-img{
+    left: 12vw;
+    top: 11vw;
+
+
+}
+
+
+
+.content:hover .plane-img{
+    left: 50vw;
+
+}
+
+.content:hover .boy-2-img{
+    left: 70vw;
+
+
+}
+.content:hover .boy-img{
+    top: 12vw;
+
+
 }
 
 .content .main-head{
