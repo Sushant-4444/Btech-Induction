@@ -41,3 +41,14 @@ option_buttons.forEach(button=>{
             
         });
 });
+
+
+create_avatar_button=document.querySelector('#createavatarbtn');
+
+create_avatar_button.addEventListener('click',(e)=>{
+    console.log('clicked');
+    const scrolable_div=document.querySelector('.avatar');
+    console.log(scrolable_div);
+    // scroll to bottom
+    scrolable_div.scrollTop = scrolable_div.scrollHeight;
+});
