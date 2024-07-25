@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #0F0F0F;
+    color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.5vw;
+}
+
+.curved-bar {
+    position: fixed;
+    top: 2vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(28, 28, 28, 0.8);
+    border-radius: 2vw;
+    /* padding: 0.6vw 1.2vw; */
+    font-size: 1vw;
+    font-family: 'InstrumentSans Regular';
+    width: 23.2vw;
+    height: 2.77vw;
+    z-index: 10;
+}
+
+.curved-bar a {
+    color: #fff;
+    text-decoration: none;
+    /* margin: 0 1.5vw; */
+    padding: 0.5vw 1vw;
+    border-radius: 1vw;
+    transition: background-color 0.3s;
+}
+
+.curved-bar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header img:first-child {
+    width :6.54vw;
+    height: 3.43vw;
+    margin-left: 1vw;
+    margin-top: 1.8vw;
+}
+
+.header img:last-child {
+    margin-right: 1vw;
+    width : 9.58vw;
+    height: 3.7vw;
+    margin-top: 1.8vw;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    font-size: 70px;
+}
+.address{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5vh;
+}
+.address .location{
+    margin:0 5vw;
+    margin-top: 5vh;
+    width: 50vw;
+    height: 30vw;
+}
+.address .location .map{
+    border-radius: 20px;
+    width: 80%;
+    height:100%;
+}
+
+.address .text{
+    color: white;
+    text-align: left;
+    padding: 10px;
+    max-width: 30vw;
+    position: relative;
+    right: 10vw;
+}
+
+.address.text h1 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.address.text p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+@media(max-width:400px){
+    .address .text{
+        font-size: x-small;
+        margin: 1em;
+        max-width: none;
+        right: 0px;
+    }
+    .address{
+        flex-direction: column;
+    }
+    .address .location{
+        width: 80vw;
+        height: 20vh;
+    }
+    .address .location .map{
+        width: 100%;
+    }
+}
+@media(max-height:400px){
+    .address .text{
+        font-size: x-small;
+        margin: 1em;
+        max-width: none;
+        right: 0px;
+    }
+    .address{
+        flex-direction: column;
+    }
+}

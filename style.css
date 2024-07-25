@@ -476,6 +476,117 @@ body{
     z-index: 5;
   }
 
+  .footer{
+    display: flex;
+    align-items: center;
+    height: 78vw;
+    background-color: rgba(28, 28, 28, 0.8);
+    padding: 0 2vw;
+  }
+
+/* .house {
+    position: relative;
+    top: calc(50% - 14vw);
+    left: calc(50% - 14vw);
+}
+
+.house img {
+    width: 28vw;
+    height: 28vw;
+} */
+
+.base img {
+    margin-top: -20vw;
+    width: 98vw;
+    height: 60vw;
+}
+
+.footer .footer-down{
+    display: flex;
+    align-items: center;
+    margin-left: 4.5vw;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-content .footer-image .iiitd-logo{
+    width: 40vw;
+    margin-left: 4.5vw;
+}
+
+.footer-text {
+    flex: 1;
+    /* min-width: 300px; */
+    margin-right: 20px;
+}
+
+.footer-text h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+.footer-text p {
+    margin-left: 5px ;
+}
+
+.footer-contact {
+    flex: 1;
+    /* min-width: 300px; */
+    position: relative;
+    top: -7vh;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+}
+
+.footer-contact span {
+    display: inline-block;
+    width: 60px;
+    font-weight: bold;
+}
+
+.footer-social {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    top: 4vh;
+    /* left: 9vw; */
+    width: 28vw;
+    justify-content: center;
+}
+
+.footer-social a img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    color: #000;
+}
+.footer-social i {
+    font-size: x-large;
+}
+.footer-contact i{
+    margin-right: 1vw;
+    font-size: x-large;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+    .footer-text, .footer-contact {
+        margin: 10px 0;
+    }
+}
+
 @media(max-width:1208px){
     .section-2-welcome .welcome-4{
         right: 0.9vw;
