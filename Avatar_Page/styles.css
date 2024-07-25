@@ -61,12 +61,32 @@ header h1 {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     width: 100%;
     height: 58vh; 
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .avatar-part {
+    width: 100%;
+    height:50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
     display: none;
 }
 
+.avatar-part .avatar-options {
+    padding: 1em;
+}
+.avatar-part .avatar-options img {
+    width: 3vw;
+    margin: 1vw;
+    /* height: 100%; */
+    /* object-fit: contain; */
+}
 .buttons {
     display: flex;
     justify-content: space-around;
@@ -86,7 +106,42 @@ header h1 {
 .buttons button:hover {
     background-color: #0056b3;
 }
+.avatar-display{
+    position: relative;
+    top: 60%;
+    left: 40%;
+    display: flex;
+    flex-direction: column;
+}
 
+.Face{
+    width: 1.21vw;
+    position: absolute;
+    top: 0.60344vw;
+    left: 3.0603vw;
+    top: -4.7508vw;
+    left: 2.705vw;
+    transform: scale(2.5);
+}
+.Eyes{
+    width: 0.738vw;
+    position: absolute;
+    left: 3.362vw;
+    top: 1.03448vw;
+    top: -4.091vw;
+    left: 3.2vw;
+    transform: scale(2.5);
+    z-index: 5;
+
+}
+
+.Body{
+    width: 4.202vw;
+    position: absolute;
+    left: 1.7758vw;
+    top: 1.681vw;
+    transform: scale(2.5);
+}
 @media (max-width: 600px) {
     .options-bar {
         flex-wrap: wrap;
