@@ -420,7 +420,7 @@ body{
 
 .slider-container {
     width: 75vw;
-    height: 44.8vw;
+    /* height: 44.8vw; */
   }
 
   
@@ -476,6 +476,12 @@ body{
     z-index: 5;
   }
 
+  footer{
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .footer{
     display: flex;
     align-items: center;
@@ -484,27 +490,39 @@ body{
     padding: 0 2vw;
   }
 
+
 /* .house {
     position: relative;
     top: calc(50% - 14vw);
     left: calc(50% - 14vw);
 }
-
+*/
 .house img {
     width: 28vw;
     height: 28vw;
-} */
-
-.base img {
-    margin-top: -20vw;
-    width: 98vw;
-    height: 60vw;
+    position: relative;
+    top: 6vw;
+    left: 3vw;
+} 
+.gradient-background{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+}
+.base {
+    /* margin-top: -20vw; */
+    width: 95.70vw;
+    height: 25vh;
+    background: linear-gradient(rgba(33,33,33,1),rgba(15,15,15,0));
+    border-radius: 2.11vw 2.11vw 0 0;
 }
 
 .footer .footer-down{
     display: flex;
     align-items: center;
     margin-left: 4.5vw;
+    
 }
 
 .footer-content {
@@ -512,72 +530,64 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 5vw;
 }
 
 .footer-content .footer-image .iiitd-logo{
     width: 40vw;
-    margin-left: 4.5vw;
+    /* margin-left: 4.5vw; */
 }
 
-.footer-text {
-    flex: 1;
-    /* min-width: 300px; */
-    margin-right: 20px;
+.footer-text p{
+    width: 40vw;
+    min-width: 135px;
 }
 
-.footer-text h1 {
-    font-size: 48px;
-    margin: 0;
-}
 
-.footer-text p {
-    margin-left: 5px ;
-}
+
 
 .footer-contact {
     flex: 1;
     /* min-width: 300px; */
-    position: relative;
-    top: -7vh;
+    /* position: relative; */
+    /* top: -7vh; */
+    padding: 2vw;
 }
 
 .footer-contact p {
-    margin: 5px 0;
+    margin: 0.4em 0;
 }
 
 .footer-contact span {
-    display: inline-block;
     width: 60px;
     font-weight: bold;
 }
 
-.footer-social {
-    display: flex;
-    gap: 10px;
-    position: relative;
-    top: 4vh;
-    /* left: 9vw; */
-    width: 28vw;
-    justify-content: center;
-}
-
-.footer-social a img {
-    width: 24px;
-    height: 24px;
-}
-
-.footer-social a {
-    text-decoration: none;
-    color: #000;
-}
-.footer-social i {
-    font-size: x-large;
-}
 .footer-contact i{
-    margin-right: 1vw;
-    font-size: x-large;
+    margin-right: 1em;
+    font-size: 1em;
 }
 
+.footer-image{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2vw;
+}
+
+.design-and-developed-by{
+    width: 98%;
+    padding: 0 4vw;
+}
+.footer-down-img{
+    width: 98%;
+}
+@media(max-width:400px){
+    .footer-content{
+        font-size: 10px;
+    }
+}
+/* 
 @media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
@@ -592,4 +602,4 @@ body{
         right: 0.9vw;
     }
 }
-
+ */
