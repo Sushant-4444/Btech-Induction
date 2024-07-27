@@ -51,3 +51,19 @@ function initializeSlider() {
   }
   // Add any other initialization logic here
 }
+document.addEventListener('DOMContentLoaded', function() {
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('in-view');
+          } else {
+              entry.target.classList.remove('in-view');
+          }
+      });
+  });
+
+  const contentElement = document.querySelector('.content');
+  if (contentElement) {
+      observer.observe(contentElement);
+  }
+});

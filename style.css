@@ -75,6 +75,7 @@ body{
 .content .plane-img{
     position: absolute;
     left: 100vw;
+    top: -1vw;
     width: 16.19vw;
     height:16.19vw;
     /* z-index: -1; */
@@ -427,6 +428,7 @@ body{
   .slider {
     overflow: hidden;
     width: 100%; /* Ensure the slider takes full width */
+    height: 32vw;
   }
   
   .slides {
@@ -603,3 +605,174 @@ body{
     }
 }
  */
+
+@media(max-width:768px) {
+    .content{
+        height: auto;
+        margin-top: 32vw;
+        position: unset;
+    }
+    .image-box{
+        position: relative;
+    }
+    .content .message{
+        margin: 21vw 0 4vw 4vw;
+    width: 78.19vw;
+    /* height: 2.1vw; */
+    font-size: 4.5vw;
+    height: auto;
+    }
+    .content .explore-button{
+        width: 32.96vw;
+        height: 10.7vw;
+        /* border-radius: 13.609vw; */
+        font-size: 4vw;
+        margin-right: 44vw;
+        margin-top: 10vw;
+        margin-bottom: 30vw;
+    }
+    .iiitd{
+        font-size: 9.4vw;
+    }
+    .welcomes{
+        display: block;
+        font-size: 9.4vw;
+        margin-left: 7vw;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+    .curved-bar{
+        width: 86.2vw;
+        height: 10.3vw;
+        top: 18vw;
+
+    }
+    .curved-bar a{
+        font-size: 4vw;
+        padding: 0.5vw 2vw;
+    }
+    .header img:first-child{
+        width:auto;
+        height: 6.0vw;
+        margin-top: 6.8vw;
+    }
+    .header img:last-child{
+        width:auto;
+        height: 6.54vw;
+        margin-top: 6.8vw;
+    }
+
+    .btech{
+        font-size: 9.4vw;
+    }
+    .btech .batch{
+        display: block;
+        margin-left: 20vw;
+        margin-top: 4vw;
+    }
+    .section-2-welcome{
+        position: unset;
+        height: auto;
+        background-image: url('./IMAGES/phone-bgimg.png');
+
+    }
+    .section-2-welcome img{
+        display: none;
+    }
+    .section-2-welcome .transparent-square-welcome{
+        margin-top: 40vw;
+        margin-bottom: 40vw;
+        width: 89vw;
+        height: 96vw;
+    }
+    .section-2-welcome .transparent-square-welcome h1{
+        font-size: 10.4vw;
+    }
+    .section-2-welcome .transparent-square-welcome p{
+        font-size: 4.5vw;
+        /* margin-top: 4.8vw; */
+    }
+
+    .keynote-speaker-container{
+        width: 85vw;
+    }
+    .keynote-speaker-container .speaker-card{
+        width: 38.7vw;
+        height: 58vw;
+        margin: 5vw 1vw;
+    }
+    .keynote-speaker-container .speaker-card .speaker-image{
+        width: 38.7vw;
+        height: 48.9vw;
+    }
+    .keynote-speaker-container .speaker-card .speaker-name{
+        font-size: 6.5vw;
+        padding: 4.5vw 0.5vw;
+    }
+    .keynote-speaker-container .speaker-card .speaker-position{
+        font-size: 3.45vw;
+    }   
+    .slide{
+        min-width: 49%;
+    }
+    .next{
+        top: -22.37vw;
+        left: 66vw;
+        font-size: 6vw;
+    }
+    .prev{
+        top: 16.7vw;
+        left: 0vw;
+        font-size: 6vw;
+    }
+    .prev-btn{
+        width: 0;
+        height: 0;
+    }
+    .slider{
+        height: 40vw;
+    }
+
+    .content .girl-img{
+        left: -67vw;
+        top: -40vw;
+    }
+
+    .content.in-view .girl-img{
+        left: -44vw;
+        top: -41vw;
+    }
+
+    .content .plane-img{
+        left: 54vw;
+        top: -57vw;
+        transform: scale(1.5);
+    }
+    
+    .content.in-view .plane-img{
+        left: 0vw;
+        top: -57vw;
+    }
+
+    .content .boy-img{
+        left: -79vw;
+        top: -28vw;
+        transform: scale(1.5);
+    }
+
+    .content.in-view .boy-img{
+        left: -11vw;
+        top: -28vw;
+    }
+
+    .content .boy-2-img{
+        left: 59vw;
+        top: -32vw;
+        transform: scale(1.5);
+    }
+
+    .content.in-view .boy-2-img{
+        left: 14vw;
+        top: -32vw;
+    }
+}
