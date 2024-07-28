@@ -580,6 +580,9 @@ body{
 .design-and-developed-by{
     width: 98%;
     padding: 0 4vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7em;
 }
 .footer-down-img{
     width: 98%;
@@ -774,5 +777,9 @@ body{
     .content.in-view .boy-2-img{
         left: 14vw;
         top: -32vw;
+    }
+
+    .footer-content .footer-image .iiitd-logo{
+        width: 80vw;
     }
 }
