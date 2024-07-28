@@ -582,7 +582,19 @@ body{
     padding: 0 4vw;
     display: flex;
     justify-content: space-between;
-    font-size: 0.7em;
+    font-size: 1em;
+    font-family: 'Instrument Sans Medium';
+}
+.design-and-developed-by span{
+    color: #616161;
+}
+.design-and-developed-by a{
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.design-and-developed-by a:hover{
+    font-size: 1.1em;
 }
 .footer-down-img{
     width: 98%;
@@ -781,5 +793,8 @@ body{
 
     .footer-content .footer-image .iiitd-logo{
         width: 80vw;
+    }
+    .design-and-developed-by{
+        font-size: 0.7em
     }
 }
