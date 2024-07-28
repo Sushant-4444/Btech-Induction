@@ -53,6 +53,7 @@
     border-radius: 2.11vw 2.11vw 0 0;
     display: flex;
     justify-content: center;
+    font-size: 1.5vw;
   
     
 }
@@ -66,4 +67,38 @@
 }
 .key-contact-left-side p{
     margin-bottom: 2vw;
+}
+
+.key-contact-right-side{
+    margin-top: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 4vw;
+}
+
+.key-contact-right-side p{
+    margin-bottom: 2vw;
+}
+
+.academic-p p{
+    margin-bottom:0.5vw;
+}
+.student-council-p p{
+    margin-bottom:0.5vw;
+}   
+
+
+@media(max-width:768px){
+    .background-key-contact{
+        font-size: 2.5vw;
+        width: 89vw;
+
+    }
+    .security{
+        margin-top: 2.5vw;
+    }
+    .student-council{
+        margin-top: 8vw !important;
+    }
 }
