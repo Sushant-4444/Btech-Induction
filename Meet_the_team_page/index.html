@@ -9,6 +9,82 @@
   <link rel="stylesheet" href="../fonts.css" />
   <link rel="stylesheet" href="../style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <style>
+    /* Container for the speaker card */
+.speaker-card {
+    perspective: 1000px; /* Define the perspective for the 3D effect */
+    width: 300px; /* Adjust as needed */
+    height: 400px; /* Adjust as needed */
+    margin: 20px;
+}
+
+/* Inner container to hold the front and back faces */
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Front and back faces of the card */
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Front face styling */
+.card-front {
+    /* Keep your existing styles for the front side here */
+}
+
+/* Back face styling */
+.card-back {
+    /* background-color: #f8f8f8; Adjust as needed */
+    transform: rotateY(180deg);
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+/* Hover effect to flip the card */
+.speaker-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+
+
+/* remove zoom animation */
+.keynote-speaker-container .speaker-card .speaker-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: none 0.5s ease-in; 
+}
+
+    @media(max-width: 768px) {
+
+      .flipped {
+    transform: rotateY(0) !important;
+}
+      .margin-top {
+        margin-top: 27vw;
+      }
+      .speaker-card .card-inner {
+        transform: none; /* Disable automatic flip on hover for small screens */
+    }
+}
+    
+  </style>
 </head>
 
 <body>
@@ -22,7 +98,7 @@
     </div>
     <img src="/IMAGES/inductionlogo.png" alt="Logo 2" />
   </div>  
-  <div class="keynote-speakers">
+  <div class="keynote-speakers margin-top">
     <h1 class="keynote-speaker-heading">
       <span style="
             font-family: 'Instrument Italic';
@@ -35,61 +111,77 @@
     </h1>
     <div class="keynote-speaker-container">
       <div class="speaker-card">
-        <div class="speaker-image">
-          <img src="../IMAGES/speaker.png" alt="" />
+        <div class="card-inner">
+            <div class="card-front">
+                <div class="speaker-image">
+                    <img src="../IMAGES/speaker.png" alt="Speaker Image" />
+                </div>
+                <span class="speaker-name">Pankaj Jalote</span>
+                <p class="speaker-position">Director, IIIT Delhi</p>
+            </div>
+            <div class="card-back">
+                <p>"This is a quote from the speaker."</p>
+            </div>
         </div>
-        <span class="speaker-name">Pankaj Jalote</span>
-        <p class="speaker-position">Director, IIIT Delhi</p>
-      </div>
+    </div>
       <div class="speaker-card">
-        <div class="speaker-image">
-          <img src="../IMAGES/speaker.png" alt="" />
+        <div class="card-inner">
+            <div class="card-front">
+                <div class="speaker-image">
+                    <img src="../IMAGES/Sushant.jpg" alt="Speaker Image" />
+                </div>
+                <span class="speaker-name">Sushant</span>
+                <p class="speaker-position">Developer</p>
+            </div>
+            <div class="card-back">
+                <p>"404! Freshers Not Found-Just Kidding , Welcome!"</p>
+            </div>
         </div>
-        <span class="speaker-name">Pankaj Jalote</span>
-        <p class="speaker-position">Director, IIIT Delhi</p>
-      </div>
+    </div>
       <div class="speaker-card">
-        <div class="speaker-image">
-          <img src="../IMAGES/speaker.png" alt="" />
+        <div class="card-inner">
+            <div class="card-front">
+                <div class="speaker-image">
+                    <img src="../IMAGES/speaker.png" alt="Speaker Image" />
+                </div>
+                <span class="speaker-name">Pankaj Jalote</span>
+                <p class="speaker-position">Director, IIIT Delhi</p>
+            </div>
+            <div class="card-back">
+                <p>"This is a quote from the speaker."</p>
+            </div>
         </div>
-        <span class="speaker-name">Pankaj Jalote</span>
-        <p class="speaker-position">Director, IIIT Delhi</p>
-      </div>
+    </div>
       <div class="speaker-card">
-        <div class="speaker-image">
-          <img src="../IMAGES/speaker.png" alt="" />
+        <div class="card-inner">
+            <div class="card-front">
+                <div class="speaker-image">
+                    <img src="../IMAGES/speaker.png" alt="Speaker Image" />
+                </div>
+                <span class="speaker-name">Pankaj Jalote</span>
+                <p class="speaker-position">Director, IIIT Delhi</p>
+            </div>
+            <div class="card-back">
+                <p>"This is a quote from the speaker."</p>
+            </div>
         </div>
-        <span class="speaker-name">Pankaj Jalote</span>
-        <p class="speaker-position">Director, IIIT Delhi</p>
-      </div>
+    </div>
       <div class="speaker-card">
-        <div class="speaker-image">
-          <img src="../IMAGES/speaker.png" alt="" />
+        <div class="card-inner">
+            <div class="card-front">
+                <div class="speaker-image">
+                    <img src="../IMAGES/speaker.png" alt="Speaker Image" />
+                </div>
+                <span class="speaker-name">Pankaj Jalote</span>
+                <p class="speaker-position">Director, IIIT Delhi</p>
+            </div>
+            <div class="card-back">
+                <p>"This is a quote from the speaker."</p>
+            </div>
         </div>
-        <span class="speaker-name">Pankaj Jalote</span>
-        <p class="speaker-position">Director, IIIT Delhi</p>
-      </div>
-      <div class="speaker-card">
-        <div class="speaker-image">
-          <img src="../IMAGES/speaker.png" alt="" />
-        </div>
-        <span class="speaker-name">Pankaj Jalote</span>
-        <p class="speaker-position">Director, IIIT Delhi</p>
-      </div>
-      <div class="speaker-card">
-        <div class="speaker-image">
-          <img src="../IMAGES/speaker.png" alt="" />
-        </div>
-        <span class="speaker-name">Pankaj Jalote</span>
-        <p class="speaker-position">Director, IIIT Delhi</p>
-      </div>
-      <div class="speaker-card">
-        <div class="speaker-image">
-          <img src="../IMAGES/speaker.png" alt="" />
-        </div>
-        <span class="speaker-name">Pankaj Jalote</span>
-        <p class="speaker-position">Director, IIIT Delhi</p>
-      </div>
+    </div>
+      
+     
     </div>
   </div>
   <footer>
@@ -116,7 +208,15 @@
           </div>
         </div>
         <div class="design-and-developed-by">
-
+          <div class="developed-by">
+            <span>Developed By</span>
+            <p><a href="https://www.linkedin.com/in/sushant-arora-8a2a4828a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">Sushant </a><span>and</span> <a href="https://www.linkedin.com/in/shiv-chopra-2258081b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">Shiv Chopra</a></p>
+            </div>
+          <div class="designed-by">
+          <span>Designed By</span>
+          <p><a href="https://www.linkedin.com/in/omansh-arora?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">Omansh Arora </a><span>and</span> <a href="https://www.behance.net/pranavjain29" target="_blank" rel="noopener noreferrer">Pranav Jain</a></p>
+          </div>
+          
         </div>
         <img class="footer-down-img" src="../IMAGES/footer-down-img.png" alt="">
       </div>
@@ -127,6 +227,24 @@
     </div>
     </div>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const cardInners = document.querySelectorAll('.card-inner');
+        const mediaQuery = window.matchMedia('(max-width: 768px)');
+    
+        cardInners.forEach((cardInner, index) => {
+            cardInner.id = `cardInner${index}`;
+            cardInner.classList.add('flipped');
+    
+            cardInner.addEventListener('click', function() {
+                if (mediaQuery.matches) {
+                    cardInner.classList.toggle('flipped');
+                }
+            });
+        });
+    });
+    </script>
 </body>
 
 </html>

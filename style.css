@@ -385,9 +385,7 @@ body{
     transition: transform 0.5s ease-in; /* Smooth transition for scaling */
 }
 
-.keynote-speaker-container .speaker-card .speaker-image:hover img{
-    transform: scale(1.1);
-}
+
 
 .margin-slider{
     margin-left: 1.5vw !important;
