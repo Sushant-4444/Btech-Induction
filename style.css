@@ -29,7 +29,7 @@ body{
     /* padding: 0.6vw 1.2vw; */
     font-size: 1vw;
     font-family: 'InstrumentSans Regular';
-    width: 23.2vw;
+    width: 26.2vw;
     height: 2.77vw;
     z-index: 10;
 }
@@ -456,8 +456,8 @@ body{
 
   .next{
     position: relative;
-    top: -13.37vw;
-    left: 69vw;
+    top: -10.37vw;
+    left: 70vw;
     font-size: 2vw;
     background-color:rgba(28, 28, 28, 0.8);
     color:#fff;
@@ -467,8 +467,8 @@ body{
 
   .prev{
     position: relative;
-    top: 12.09vw;
-    left: 5vw;
+    top: 9.00vw;
+    left: 4vw;
     font-size: 2vw;
     background-color:rgba(28, 28, 28, 0.8);
     color:#fff;
@@ -596,6 +596,10 @@ body{
 }
 .footer-down-img{
     width: 98%;
+}
+
+.nextbtn{
+    position: relative;
 }
 @media(max-width:400px){
     .footer-content{
@@ -729,12 +733,12 @@ body{
         min-width: 49%;
     }
     .next{
-        top: -22.37vw;
+        top: -18.37vw;
         left: 66vw;
         font-size: 6vw;
     }
     .prev{
-        top: 16.7vw;
+        top: 10.7vw;
         left: 0vw;
         font-size: 6vw;
     }

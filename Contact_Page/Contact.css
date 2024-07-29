@@ -88,7 +88,81 @@
     margin-bottom:0.5vw;
 }   
 
+.man-img{
+    position: relative;
+}
 
+.man-img img{
+    width: 20vw;
+    position: absolute;
+    right: 12vw;
+    top: 0vw;
+}
+
+.direction-parent{
+    font-size: 16px;
+}
+.directions{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20vw;
+    font-family: 'Instrument Sans Regular';
+    font-size: 1em;
+
+}
+
+
+.direction-heading{
+    font-size: 6vw;
+    margin-bottom: 2vw;
+    text-align: center;
+}
+
+.first-part-direction{
+    margin-left: 4vw;
+
+}
+
+.first-part-direction-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    width: 70vw;
+}
+
+.second-part-direction{
+    margin-left: 4vw;
+    margin-top: 2vw;
+
+}
+.second-part-direction-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    width: 70vw;
+}
+.third-part-direction{
+    margin-left: 4vw;
+    margin-top: 2vw;
+
+}
+.third-part-direction-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 2vw;
+    margin-left: 2vw;
+    width: 70vw;
+}
+
+/* .readMore{
+    width: fit-content;
+    margin-left: 6vw;
+} */
 @media(max-width:768px){
     .background-key-contact{
         font-size: 2.5vw;
@@ -101,4 +175,21 @@
     .student-council{
         margin-top: 8vw !important;
     }
+    .second-part-direction{
+        display: none;
+    }
+    .third-part-direction{
+        display: none;
+    }
+    .displayon{
+        display: block;
+    }
+    .displayoff{
+        display: none;
+    }
+
+    .direction-parent{
+        font-size: 10px;
+    }
+
 }
