@@ -1,170 +1,62 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
 body{
-    background-color:black;
-}
-.main-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    /* height: 100vh; */
-    
-}
-.schedule-container{
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    /* border: 2px solid black; */
-    width: 60%;
-    height: 80vh;
-    /* height: auto; */
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    background-color: rgb(0, 255, 98);
-}
-.each-day-column{
-    /* flex: 0 0 100%; */
-    /* height: 60vh; */
-    width: 90%;
-    box-shadow: 0 0 10px 5px rgba(164, 48, 48, 0.5);
-    border-radius: 10px;
-    /* margin:0 0.3em; */
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 1em;
-    height: 45vh;
-    overflow-y: scroll;
+    background-color: #0F0F0F;
+    color: white;
 }
 
-.day-header{
-    position: sticky;
-    top: 0;
-    /* height: 15%; */
-    height: 15vh;
-    margin: 1em;
-    width: 90%;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+.header {
     display: flex;
-    justify-content:space-between;
-    align-items: center;
-    z-index: 1;
-}
-.event-card{
-    /* position: relative; */
-    min-height: 170px;
-    max-width: 350px;
-    width: 47%;
-    margin: 1em;
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    height: 7.5vw;
 }
-.slider-wrapper {
-    overflow: hidden;
-    width: 100%;
-  }
-  
-.slider-container {
+
+.curved-bar {
+    position: fixed;
+    top: 2vw;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    padding-right: 5px;
-    transition: transform 0.5s ease-in-out;
-    min-width: 600%;
-  }
-
-.next-prev{
-    padding: 10px 20px;
-  background-color: #007BFF; /* Primary button color */
-  color: white; /* Text color */
-  border: none;
-  border-radius: 10px; /* Matching the border-radius of event-card */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-  cursor: pointer; /* Changes the cursor to a pointer to indicate it's clickable */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover effects */
-  margin-left:1em;
-  margin-right:1em;
-
-}
-
-.next-prev:hover{
-    background-color: #0056b3; /* Darker shade on hover */
-    transform: translateY(-2px); /* Slight lift effect on hover */
-}
-
-.next-prev:active {
-    background-color: #004085; /* Even darker shade to simulate click */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Slightly more inset shadow to simulate press */
-    transform: translateY(1px); /* Simulates the button being pressed down */
-  }
-
-
-/* Initial state: .event-detail is hidden */
-.event-card .event-detail {
-    /* Initial styles for .event-detail */
-    display: none;
-}
-
-/* Add this class for blurring */
-.event-card.blur {
-    filter: blur(4px);
-}
-
-
-/* Style for .event-detail when it's focused and visible */
-.event-detail.focused {
-    visibility: visible;
-    filter: none; /* Ensure it's not blurred */
-    /* position: ; Adjust based on layout needs */
-    background-color: #fff; /* Background to ensure readability */
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    margin-top: 20px; /* Space from the blurred cards */
-    border: 2px solid black;
-    height: 40vh;
-    width: 40vw;
-    
-}
-
-.each-day-column .event-detail {
-    visibility: visible;
-    position: absolute;
-    top: 6%;
-    /* left: 0; */
-    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(28, 28, 28, 0.8);
+    border-radius: 2vw;
+    /* padding: 0.6vw 1.2vw; */
+    font-size: 1vw;
+    font-family: 'InstrumentSans Regular';
+    width: 26.2vw;
+    height: 2.77vw;
     z-index: 10;
-    background-color: white; /* Example: Ensure it has a visible background */
-    color: black; /* Example: Ensure text is visible */
-    /* Ensure there's a minimum height */
-    min-height: 20px; /* Adjust as needed */
 }
 
-@media(max-width:771px){
-    .event-card{
-        width: 90%;
-    }
-
+.curved-bar a {
+    color: #fff;
+    text-decoration: none;
+    /* margin: 0 1.5vw; */
+    padding: 0.5vw 1vw;
+    border-radius: 1vw;
+    transition: background-color 0.3s;
 }
-@media(max-width:432px){
-   #Day-number{
-    font-size:1em
-   }
-   .next-prev{
-         padding: 5px 10px;
-   }
+
+.curved-bar a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header img:first-child {
+    width :6.54vw;
+    height: 3.43vw;
+    margin-left: 1vw;
+    margin-top: 1.8vw;
+}
+
+.header img:last-child {
+    margin-right: 1vw;
+    width : 9.58vw;
+    height: 3.7vw;
+    margin-top: 1.8vw;
 }
