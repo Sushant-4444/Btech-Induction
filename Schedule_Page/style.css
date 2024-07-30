@@ -48,12 +48,17 @@
 .schedule-box {
     width: 81vw;
     height: 13vw;
-    background: linear-gradient(-86deg, #000 0%, #fff 100%);
+    background: linear-gradient(93.586deg, rgba(255, 255, 255, 10%) 0%, rgba(255, 255, 255, 0%) 100%);
     border-radius: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+.schedule-box:hover {
+    background: linear-gradient(93.586deg, rgba(255, 255, 255, 0%) 12%, rgba(255, 255, 255, 10%) 96%);
+    transition: background-color 1s ease;
 }
 
 .schedule-box h2, .schedule-box p, .schedule-box h3 {
