@@ -54,11 +54,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    /* transition: all 1s ease-in; */
 }
 
 .schedule-box:hover {
     background: linear-gradient(93.586deg, rgba(255, 255, 255, 0%) 12%, rgba(255, 255, 255, 10%) 96%);
-    transition: background-color 1s ease;
 }
 
 .schedule-box h2, .schedule-box p, .schedule-box h3 {
@@ -83,4 +83,12 @@
     font-size: 3vw;
     top: 4vw;
     right: 3vw;
+}
+
+@media (max-width:768px){
+    .outer-schedule-container {
+        margin-top: 25vw;
+    }
+    
+    
 }
