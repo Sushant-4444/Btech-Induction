@@ -21,11 +21,12 @@
     background-color: #1c1c1c;
     color: #fff;
     border: none;
-    max-width: 10vw;
+    max-width: 13vw;
     padding: 1.5vw;
     border-radius: 10vw;
     cursor: pointer;
     font-size: 1.8vw;
+    width: 13vw;
 }
 
 .nav-button:disabled {
@@ -45,44 +46,78 @@
     margin-top: 2vw;
 }
 
+
 .schedule-box {
     width: 81vw;
-    height: 13vw;
-    background: linear-gradient(93.586deg, rgba(255, 255, 255, 10%) 0%, rgba(255, 255, 255, 0%) 100%);
-    border-radius: 55px;
+    height: 9vw;
+    border-radius: 3.6vw;
+    background: linear-gradient(125deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:space-between;
+    /* align-items: center; */
     position: relative;
-    /* transition: all 1s ease-in; */
+    overflow: hidden; /* Ensure the pseudo-element is contained within the border radius */
+    box-sizing: border-box;
+    margin-bottom: 3vw;
+    transition: height 1s ease;
+}
+.schedule-box.clicked  {
+    height: 14vw;
 }
 
-.schedule-box:hover {
-    background: linear-gradient(93.586deg, rgba(255, 255, 255, 0%) 12%, rgba(255, 255, 255, 10%) 96%);
+.schedule-box.clicked p{
+    display: block;
+}
+
+.schedule-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit; /* Inherit the border radius from the parent */
+    padding: 1px; /* Adjust based on border width */
+    background: linear-gradient(93.586deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.1) 55%, rgba(255, 255, 255, 1) 100%);
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: -1; /* Place the pseudo-element behind the content */
 }
 
 .schedule-box h2, .schedule-box p, .schedule-box h3 {
     color: #fff;
     position: absolute;
+
 }
 
 .schedule-box h2 {
     font-size: 2.4vw;
-    top: 2vw;
-    left: 3vw;
+    margin-top: 3vw;
+    margin-left: 3vw;
+    width: 29vw;
 }
 
 .schedule-box p {
-    font-size: 1.32vw;
-    top: 6vw;
+    font-size: 1.6vw;
+    top: 7vw;
     left: 3vw;
-    width: 25vw;
+    width: 26vw;
+    display: none;
+    
 }
 
 .schedule-box h3 {
     font-size: 3vw;
-    top: 4vw;
-    right: 3vw;
+    margin-left: 53vw;
+    margin-top: 3vw;
+}
+
+.outer-schedule-box{
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width:768px){
