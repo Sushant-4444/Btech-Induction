@@ -1,62 +1,81 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-}
-body{
-    background-color: #0F0F0F;
-    color: white;
-}
-
-.header {
+.container-schedule {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 7.5vw;
+    justify-content: space-between;
+    width: 95vw;
+    max-width: 100vw;
+    padding: 3vw;
+    background-color: #0f0f0f;
 }
 
-.curved-bar {
-    position: fixed;
-    top: 2vw;
-    left: 50%;
-    transform: translateX(-50%);
+.day {
+    font-size: 4vw;
+}
+
+.navigation {
+    display: flex;
+    gap: 2vw;
+}
+
+.nav-button {
+    background-color: #1c1c1c;
+    color: #fff;
+    border: none;
+    max-width: 10vw;
+    padding: 1.5vw;
+    border-radius: 10vw;
+    cursor: pointer;
+    font-size: 1.8vw;
+}
+
+.nav-button:disabled {
+    background-color: #1c1c1c;
+    cursor: not-allowed;
+}
+
+.schedule {
+    font-size: 4vw;
+}
+
+.schedule-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    align-items: center;
+    margin-top: 2vw;
+}
+
+.schedule-box {
+    width: 81vw;
+    height: 13vw;
+    background: linear-gradient(-86deg, #000 0%, #fff 100%);
+    border-radius: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(28, 28, 28, 0.8);
-    border-radius: 2vw;
-    /* padding: 0.6vw 1.2vw; */
-    font-size: 1vw;
-    font-family: 'InstrumentSans Regular';
-    width: 26.2vw;
-    height: 2.77vw;
-    z-index: 10;
+    position: relative;
 }
 
-.curved-bar a {
+.schedule-box h2, .schedule-box p, .schedule-box h3 {
     color: #fff;
-    text-decoration: none;
-    /* margin: 0 1.5vw; */
-    padding: 0.5vw 1vw;
-    border-radius: 1vw;
-    transition: background-color 0.3s;
+    position: absolute;
 }
 
-.curved-bar a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+.schedule-box h2 {
+    font-size: 2.4vw;
+    top: 2vw;
+    left: 3vw;
 }
 
-.header img:first-child {
-    width :6.54vw;
-    height: 3.43vw;
-    margin-left: 1vw;
-    margin-top: 1.8vw;
+.schedule-box p {
+    font-size: 1.32vw;
+    top: 6vw;
+    left: 3vw;
+    width: 25vw;
 }
 
-.header img:last-child {
-    margin-right: 1vw;
-    width : 9.58vw;
-    height: 3.7vw;
-    margin-top: 1.8vw;
+.schedule-box h3 {
+    font-size: 3vw;
+    top: 4vw;
+    right: 3vw;
 }
