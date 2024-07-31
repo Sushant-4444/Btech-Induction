@@ -163,6 +163,29 @@
     width: fit-content;
     margin-left: 6vw;
 } */
+
+.virtual-tour {
+    padding-top: 5vw;
+}
+
+.Virtual-Tour-Heading {
+    font-size: 4vw;
+    margin-bottom: 4vw;
+   text-align: center;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    padding-bottom: 4vw;
+}
+
+.video-container iframe {
+    width: 40vw;
+    height: 22.5vw;
+}
+
 @media(max-width:768px){
     .background-key-contact{
         font-size: 2.5vw;
