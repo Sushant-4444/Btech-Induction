@@ -28,7 +28,7 @@
     </div>
     <img src="/IMAGES/inductionlogo.png" alt="Logo 2" />
   </div>
-  <div class="content">
+  <div class="content animate">
     <div class="main-head">
       <span class="iiitd">IIIT Delhi <span class="welcomes">WELCOMES</span></span>
 
@@ -54,7 +54,7 @@
   </div>
 
 
-  <div class="section-2-welcome" id="section-2-welcome">
+  <div class="section-2-welcome animate" id="section-2-welcome">
     <img class="left-hand" src="IMAGES/left-hand.png" alt="" />
     <img class="right-hand" src="IMAGES/right-hand.png" alt="" />
     <div class="transparent-square-welcome">
@@ -76,7 +76,7 @@
     <img class="welcome-3" src="./IMAGES/welcome-3.png" alt="" />
     <img class="welcome-4" src="./IMAGES/welcome-4.png" alt="" />
   </div>
-  <div id="keynote-speaker-container" class="keynote-speakers">
+  <div id="keynote-speaker-container" class="keynote-speakers animate">
     <h1 class="keynote-speaker-heading">
       <!-- <span style="
             font-family: 'Instrument Italic';
@@ -88,70 +88,70 @@
           ">&nbsp;&nbsp;Keynote</span>-->Speakers 
     </h1>
     <div  class="keynote-speaker-container">
-      <div class="speaker-card">
+      <div class="speaker-card animate">
         <div class="speaker-image">
           <img src="./IMAGES/speaker.png" alt="" />
         </div>
         <span class="speaker-name">Pankaj Jalote</span>
         <p class="speaker-position">Founding Director</p>
       </div>
-      <div class="speaker-card">
+      <div class="speaker-card animate">
         <div class="speaker-image">
           <img src="./IMAGES/ranjan bose.jpeg" alt="" />
         </div>
         <span class="speaker-name">Ranjan Bose</span>
         <p class="speaker-position">Director, IIIT Delhi</p>
       </div>
-      <div class="speaker-card">
+      <div class="speaker-card animate">
         <div class="speaker-image">
           <img src="./IMAGES/nidhi-mathur.png" alt="" />
         </div>
         <span class="speaker-name">Nidhi Mathur</span>
         <p class="speaker-position">External Member ,ICC</p>
       </div>
-      <div class="speaker-card">
+      <div class="speaker-card animate">
         <div class="speaker-image">
           <img src="./IMAGES/smriti.jpg" alt="" />
         </div>
         <span class="speaker-name">Smriti Singh</span>
         <p class="speaker-position">Professor</p>
       </div>
-      <div class="speaker-card">
+      <div class="speaker-card animate">
         <div class="speaker-image">
           <img src="./IMAGES/G.S. Visveswaran.jpg" alt="" />
         </div>
         <span class="speaker-name">G.S. Visveswaran</span>
         <p class="speaker-position">Professor</p>
       </div>
-      <div class="speaker-card">
+      <div class="speaker-card animate">
         <div class="speaker-image">
           <img src="./IMAGES/debajyoti.jpg" alt="" />
         </div>
         <span class="speaker-name">Debajyoti Bera</span>
         <p class="speaker-position">Professor</p>
       </div>
-      <div class="speaker-card">
+      <div class="speaker-card animate">
         <div class="speaker-image">
           <img src="./IMAGES/anuj grover.jpg" alt="" />
         </div>
         <span class="speaker-name">Anuj Grover</span>
         <p class="speaker-position">Professor</p>
       </div>
-      <div class="speaker-card">
+      <div class="speaker-card animate">
         <div class="speaker-image">
           <img src="./IMAGES/Anshu_Gupta.jpg" alt="" />
         </div>
         <span class="speaker-name">Anshu Gupta</span>
         <p class="speaker-position">Founder@Goonj</p>
       </div>
-      <div class="speaker-card">
+      <div class="speaker-card animate">
         <div class="speaker-image">
           <img src="./IMAGES/Neha agarwal.jpeg" alt="" />
         </div>
         <span class="speaker-name">Neha Agrawal</span>
         <p class="speaker-position">Educator</p>
       </div>
-      <div class="speaker-card">
+      <div class="speaker-card animate">
         <div class="speaker-image">
           <img src="./IMAGES/Chavvi Garg.jpeg" alt="" />
         </div>
@@ -161,7 +161,7 @@
     </div>
   </div>
 
-  <div class="campus-highlights">
+  <div class="campus-highlights animate">
     <h1 class="campus-highlights-heading">
       <span style="
             font-family: 'Instrument Italic';
@@ -260,6 +260,23 @@
     </div>
   </footer>
   <script src="script.js"></script>
+  <script>
+    const observer = new IntersectionObserver(entries => {
+  // Loop over the entries
+  entries.forEach(entry => {
+    // If the element is visible
+    if (entry.isIntersecting) {
+      // Add the animation class
+      entry.target.classList.add('image-animation');
+    }
+  });
+});
+
+const viewbox = document.querySelectorAll('.animate');
+viewbox.forEach(image => {
+  observer.observe(image);
+});
+  </script>
 </body>
 
 </html>
