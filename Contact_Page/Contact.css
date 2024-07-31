@@ -214,5 +214,18 @@
     .direction-parent{
         font-size: 10px;
     }
+    .Virtual-Tour-Heading {
+        font-size: 8vw;
+    }
 
+    .video-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-container iframe {
+        width: 80vw;
+        height: 45vw;
+        margin-bottom: 4vw;
+    }
 }
