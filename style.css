@@ -223,14 +223,24 @@ body{
 
 
 .iiitd {
-    font-size: 4vw;
-    font-family: 'Instrument Medium';
+    font-size: 8.4vw;
+    font-family: 'Instrument Italic';
 
 }
 
 .welcomes {
-    font-size: 4vw;
-    font-family: 'Instrument Medium';
+    font-size: 8.4vw;
+    font-family: 'Instrument Sans Medium';
+}
+
+.btech{
+    font-size: 8.4vw;
+    font-family: 'Instrument Sans Medium';
+}
+
+.btech .batch{
+    font-size: 8.4vw;
+    font-family: 'Instrument Italic';
 }
 
 .section-2-welcome {
@@ -686,6 +696,7 @@ body{
         display: block;
         margin-left: 20vw;
         margin-top: 4vw;
+        font-size: 8.4vw;
     }
     .section-2-welcome{
         position: unset;

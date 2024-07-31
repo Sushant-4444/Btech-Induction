@@ -55,3 +55,8 @@
     font-family: 'Instrument Sans Regular';
     src: url(./FONTS/InstrumentSans-Regular.ttf);
 }
+
+@font-face {
+    font-family: 'Instrument Sans Medium';
+    src: url(./FONTS/InstrumentSans-Medium.ttf);
+}
