@@ -86,7 +86,7 @@ body{
 .content .boy-2-img{
     position: absolute;
     left: 100vw;
-    top: 15vw;
+    top: 20vw;
     width: 12.49vw;
     height:14.40vw;
     /* z-index: -1; */
@@ -95,7 +95,7 @@ body{
 }
 .content .boy-img{
     position: absolute;
-    left:22vw;
+    left:32vw;
     top:49vw ;
     width: 21.8vw;
     height:21.8vw;
@@ -116,8 +116,8 @@ body{
 }
 
 .content:hover .girl-img{
-    left: 12vw;
-    top: 11vw;
+    left: 9.5vw;
+    top: 14vw;
 
 
 }
@@ -130,12 +130,12 @@ body{
 }
 
 .content:hover .boy-2-img{
-    left: 70vw;
+    left: 83vw;
 
 
 }
 .content:hover .boy-img{
-    top: 12vw;
+    top: 18vw;
 
 
 }
@@ -148,7 +148,7 @@ body{
 }
 
 .content .message{
-    margin: 3vw 0 4vw 13vw;
+    margin: 3vw 0 4vw 30vw;
     width: 24.19vw;
     height: 3.10vw;
     font-size: 1vw;
@@ -161,7 +161,7 @@ body{
     font-size: 1vw;
 
 } */
-.content .explore-button {
+.explore-button {
     width: 11.96vw;
     height: 3.7vw;
     border-radius: 6.609vw;
@@ -176,38 +176,38 @@ body{
     outline: none;
     transition: all 0.4s ease;
     padding-right: 0.7vw;
+    margin-left: 18vw;
 }
 
-.content .explore-button .arrow-left,
-.content .explore-button .arrow-right {
+.explore-button .arrow-left,
+.explore-button .arrow-right {
     position: absolute;
     transition: all 0.4s ease;
 }
 
-.content .explore-button .arrow-left {
+.explore-button .arrow-left {
     left: -2vw;
     opacity: 0;
 }
 
-.content .explore-button .arrow-right {
+.explore-button .arrow-right {
     right: 0.66vw;
 }
-
-.content .explore-button .text {
+.explore-button .text {
     position: relative;
     transition: all 0.4s ease;
 }
 
-.content .explore-button:hover .text {
+.explore-button:hover .text {
     transform: translateX(1.32vw);
 }
 
-.content .explore-button:hover .arrow-left {
+.explore-button:hover .arrow-left {
     left: 0.66vw;
     opacity: 1;
 }
 
-.content .explore-button:hover .arrow-right {
+.explore-button:hover .arrow-right {
     right: -2vw;
     opacity: 0;
 }
@@ -216,7 +216,7 @@ body{
     
 } */
 
-.content .explore-button:hover{
+.explore-button:hover{
     cursor: pointer;
 }
 
@@ -236,6 +236,7 @@ body{
 .btech{
     font-size: 8.4vw;
     font-family: 'Instrument Sans Medium';
+    margin-left: 10vw;
 }
 
 .btech .batch{
@@ -512,7 +513,7 @@ body{
     height: 28vw;
     position: relative;
     top: 6vw;
-    left: 3vw;
+    left: 22vw;
 } 
 .gradient-background{
     width: 100%;
@@ -611,6 +612,15 @@ body{
 .nextbtn{
     position: relative;
 }
+
+.avatar_button{
+    margin-bottom: -23vw;
+    width: 20vw;
+    margin-left: -27vw;
+}
+footer{
+    margin-top: 10vw;
+}
 @media(max-width:400px){
     .footer-content{
         font-size: 10px;
@@ -649,7 +659,7 @@ body{
     font-size: 4.5vw;
     height: auto;
     }
-    .content .explore-button{
+    .explore-button{
         width: 32.96vw;
         height: 10.7vw;
         /* border-radius: 13.609vw; */
@@ -657,6 +667,7 @@ body{
         margin-right: 44vw;
         margin-top: 10vw;
         margin-bottom: 30vw;
+        margin-left: 0vw;
     }
     .iiitd{
         font-size: 9.4vw;
@@ -691,6 +702,7 @@ body{
 
     .btech{
         font-size: 9.4vw;
+        margin-left: 0vw;
     }
     .btech .batch{
         display: block;
@@ -767,7 +779,7 @@ body{
     }
 
     .content.in-view .girl-img{
-        left: -44vw;
+        left: -35vw;
         top: -41vw;
     }
 
@@ -779,7 +791,7 @@ body{
     
     .content.in-view .plane-img{
         left: 0vw;
-        top: -57vw;
+        top: -59vw;
     }
 
     .content .boy-img{
@@ -789,7 +801,7 @@ body{
     }
 
     .content.in-view .boy-img{
-        left: -11vw;
+        left: -5vw;
         top: -28vw;
     }
 
@@ -800,7 +812,7 @@ body{
     }
 
     .content.in-view .boy-2-img{
-        left: 14vw;
+        left: 18vw;
         top: -32vw;
     }
 
@@ -810,4 +822,18 @@ body{
     .design-and-developed-by{
         font-size: 0.7em
     }
+
+    .avatar_button{
+        margin-bottom: -26vw;
+        margin-left: -3vw;
+        width: 40vw;
+    }
+    .house img{
+        left: 42vw;
+    }
+    .avatar_button .text{
+        font-size: 3vw;
+        width: 23vw;
+    }
 }
+

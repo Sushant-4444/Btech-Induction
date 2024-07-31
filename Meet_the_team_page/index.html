@@ -2,109 +2,116 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>INDUCTION 24 | TEAM</title>
-  <link rel="icon" href=".../IMAGES/" />
-  <link rel="stylesheet" href="../fonts.css" />
-  <link rel="stylesheet" href="../style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-  <style>
-    /* Container for the speaker card */
-.speaker-card {
-    perspective: 1000px; /* Define the perspective for the 3D effect */
-    width: 300px; /* Adjust as needed */
-    height: 400px; /* Adjust as needed */
-    margin: 20px;
-}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INDUCTION 24 | TEAM</title>
+    <link rel="icon" href=".../IMAGES/" />
+    <link rel="stylesheet" href="../fonts.css" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <style>
+        /* Container for the speaker card */
+        .speaker-card {
+            perspective: 1000px;
+            /* Define the perspective for the 3D effect */
+            width: 300px;
+            /* Adjust as needed */
+            height: 400px;
+            /* Adjust as needed */
+            margin: 20px;
+        }
 
-/* Inner container to hold the front and back faces */
-.card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
+        /* Inner container to hold the front and back faces */
+        .card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
 
-/* Front and back faces of the card */
-.card-front, .card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* border: 1px solid #ccc; */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+        /* Front and back faces of the card */
+        .card-front,
+        .card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            /* border: 1px solid #ccc; */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-/* Front face styling */
-.card-front {
-    /* Keep your existing styles for the front side here */
-}
+        /* Front face styling */
+        .card-front {
+            /* Keep your existing styles for the front side here */
+        }
 
-/* Back face styling */
-.card-back {
-    /* background-color: #f8f8f8; Adjust as needed */
-    transform: rotateY(180deg);
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
-}
+        /* Back face styling */
+        .card-back {
+            /* background-color: #f8f8f8; Adjust as needed */
+            transform: rotateY(180deg);
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+        }
 
-/* Hover effect to flip the card */
-.speaker-card:hover .card-inner {
-    transform: rotateY(180deg);
-}
+        /* Hover effect to flip the card */
+        .speaker-card:hover .card-inner {
+            transform: rotateY(180deg);
+        }
 
 
 
-/* remove zoom animation */
-.keynote-speaker-container .speaker-card .speaker-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: none 0.5s ease-in; 
-}
+        /* remove zoom animation */
+        .keynote-speaker-container .speaker-card .speaker-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: none 0.5s ease-in;
+        }
 
-    @media(max-width: 768px) {
+        @media(max-width: 768px) {
 
-      .flipped {
-    transform: rotateY(0) !important;
-}
-      .margin-top {
-        margin-top: 27vw;
-      }
-      .speaker-card .card-inner {
-        transform: none; /* Disable automatic flip on hover for small screens */
-    }
-    .special{
-      font-size: 0.7em;
-    }
-}
-    
-  </style>
+            .flipped {
+                transform: rotateY(0) !important;
+            }
+
+            .margin-top {
+                margin-top: 27vw;
+            }
+
+            .speaker-card .card-inner {
+                transform: none;
+                /* Disable automatic flip on hover for small screens */
+            }
+
+            .special {
+                font-size: 0.7em;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <div class="header">
-    <img src="/IMAGES/iiitdlogo.png" alt="Logo 1" />
-    <div class="curved-bar">
-        <a href="../index.html">Home</a>
-        <a href="../Schedule_Page/index.html">Schedule</a>
-        <a href="../index.html#keynote-speaker-container">Speakers</a>
-        <a href="../Contact_Page/index.html">Contact</a>
-        <a href="index.html">Team</a>
+    <div class="header">
+        <img src="/IMAGES/iiitdlogo.png" alt="Logo 1" />
+        <div class="curved-bar">
+            <a href="../index.html">Home</a>
+            <a href="../Schedule_Page/index.html">Schedule</a>
+            <a href="../index.html#keynote-speaker-container">Speakers</a>
+            <a href="../Contact_Page/index.html">Contact</a>
+            <a href="index.html">Team</a>
+        </div>
+        <img src="/IMAGES/inductionlogo.png" alt="Logo 2" />
     </div>
-    <img src="/IMAGES/inductionlogo.png" alt="Logo 2" />
-  </div>  
-  <div class="keynote-speakers margin-top">
-    <h1 class="keynote-speaker-heading">
-      <span style="
+    <div class="keynote-speakers margin-top">
+        <h1 class="keynote-speaker-heading">
+            <span style="
             font-family: 'Instrument Italic';
             font-weight: 100;
             margin-right: 2.5vw;
@@ -112,27 +119,27 @@
             line-height: 4vw;
             font-weight: lighter;
           ">&nbsp;&nbsp;MEET</span>The Team
-    </h1>
-    <div class="keynote-speaker-container">
-        <div class="speaker-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <div class="speaker-image">
-                        <img src="../IMAGES/Rahul-Goel.jpg" alt="Speaker Image" />
+        </h1>
+        <div class="keynote-speaker-container">
+            <div class="speaker-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="speaker-image">
+                            <img src="../IMAGES/Rahul-Goel.jpg" alt="Speaker Image" />
+                        </div>
+                        <span class="speaker-name">Rahul Goel</span>
+                        <p class="speaker-position">Organizing Committee</p>
                     </div>
-                    <span class="speaker-name">Rahul Goel</span>
-                    <p class="speaker-position">Organizing Committee</p>
-                </div>
-                <div class="card-back">
-                    <p class="special">saaree umr hum mar-mar ke jee liye 
-                        ek pal to ab hamein jeene do, jeene do
-                        Give me some sunshine, give me some rain 
-                        Give me another chance
-                        I wanna grow up once again</p>
+                    <div class="card-back">
+                        <p class="special">saaree umr hum mar-mar ke jee liye
+                            ek pal to ab hamein jeene do, jeene do
+                            Give me some sunshine, give me some rain
+                            Give me another chance
+                            I wanna grow up once again</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="speaker-card">
+            <div class="speaker-card">
                 <div class="card-inner">
                     <div class="card-front">
                         <div class="speaker-image">
@@ -147,310 +154,331 @@
                 </div>
             </div>
 
-        <div class="speaker-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <div class="speaker-image">
-                        <img src="../IMAGES/Hitesh-Vatsayan.png" alt="Speaker Image" />
+            <div class="speaker-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="speaker-image">
+                            <img src="../IMAGES/Ekansh.jpg" alt="Speaker Image" />
+                        </div>
+                        <span class="speaker-name">Ekansh</span>
+                        <p class="speaker-position">Organizing Committee</p>
                     </div>
-                    <span class="speaker-name">Hitesh Vatsayan</span>
-                    <p class="speaker-position">Organizing Committee</p>
-                </div>
-                <div class="card-back">
-                    <p class="special">It feels like just yesterday I was in your shoes. Time flies at IIIT Delhi—embrace every moment and make it count!. Welcome to the community </p>
+                    <div class="card-back">
+                        <p>Your default search engine!</p>
+                    </div>
                 </div>
             </div>
-          </div>
-          
+            <div class="speaker-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="speaker-image">
+                            <img src="../IMAGES/Hitesh-Vatsayan.png" alt="Speaker Image" />
+                        </div>
+                        <span class="speaker-name">Hitesh Vatsayan</span>
+                        <p class="speaker-position">Organizing Committee</p>
+                    </div>
+                    <div class="card-back">
+                        <p class="special">It feels like just yesterday I was in your shoes. Time flies at IIIT
+                            Delhi—embrace every moment and make it count!. Welcome to the community </p>
+                    </div>
+                </div>
+            </div>
 
-          <div class="speaker-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <div class="speaker-image">
-                        <img src="../IMAGES/Shiv1.jpg" alt="Speaker Image" />
+
+            <div class="speaker-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="speaker-image">
+                            <img src="../IMAGES/Shiv1.jpg" alt="Speaker Image" />
+                        </div>
+                        <span class="speaker-name">Shiv Chopra</span>
+                        <p class="speaker-position">Developer</p>
                     </div>
-                    <span class="speaker-name">Shiv Chopra</span>
-                    <p class="speaker-position">Developer</p>
-                </div>
-                <div class="card-back">
-                    <p>Git commit -m 'Welcome to the place where your CGPA is inversely proportional to the Fun you do'</p>
-                </div>
-            </div>
-        </div>
-        <div class="speaker-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <div class="speaker-image">
-                        <img src="../IMAGES/Sushant.jpg" alt="Speaker Image" />
+                    <div class="card-back">
+                        <p>Git commit -m 'Welcome to the place where your CGPA is inversely proportional to the Fun you
+                            do'</p>
                     </div>
-                    <span class="speaker-name">Sushant</span>
-                    <p class="speaker-position">Developer</p>
-                </div>
-                <div class="card-back">
-                    <p>404! Freshers Not Found-Just Kidding , Welcome!</p>
                 </div>
             </div>
-        </div>
-        <div class="speaker-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <div class="speaker-image">
-                        <img src="../IMAGES/omansh.png" alt="Speaker Image" />
+            <div class="speaker-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="speaker-image">
+                            <img src="../IMAGES/Sushant.jpg" alt="Speaker Image" />
+                        </div>
+                        <span class="speaker-name">Sushant</span>
+                        <p class="speaker-position">Developer</p>
                     </div>
-                    <span class="speaker-name">Omansh Arora</span>
-                    <p class="speaker-position">Designer</p>
-                </div>
-                <div class="card-back">
-                    <p>Too Lazy to write something 👍</p>
-                </div>
-            </div>
-          </div>
-          <div class="speaker-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <div class="speaker-image">
-                        <img src="../IMAGES/Pranav.png" alt="Speaker Image" />
+                    <div class="card-back">
+                        <p>404! Freshers Not Found-Just Kidding , Welcome!</p>
                     </div>
-                    <span class="speaker-name">Pranav Jain</span>
-                    <p class="speaker-position">Designer</p>
-                </div>
-                <div class="card-back">
-                    <p>Khali hath aaye the , Khali hath Jaenge</p>
                 </div>
             </div>
-          </div>
-          <div class="speaker-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <div class="speaker-image">
-                        <img src="../IMAGES/Divyansh-Mogra.jpg" alt="Speaker Image" />
+            <div class="speaker-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="speaker-image">
+                            <img src="../IMAGES/omansh.png" alt="Speaker Image" />
+                        </div>
+                        <span class="speaker-name">Omansh Arora</span>
+                        <p class="speaker-position">Designer</p>
                     </div>
-                    <span class="speaker-name">Divyansh Mogra </span>
-                    <p class="speaker-position">Organizing Committee</p>
-                </div>
-                <div class="card-back">
-                    <p>to code or to sleep: you can only choose one</p>
-                </div>
-            </div>
-          </div>
-          <div class="speaker-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <div class="speaker-image">
-                        <img src="../IMAGES/Namit.jpg" alt="Speaker Image" />
+                    <div class="card-back">
+                        <p>Too Lazy to write something 👍</p>
                     </div>
-                    <span class="speaker-name">Namit Bajaj</span>
-                    <p class="speaker-position">OT Lead</p>
-                </div>
-                <div class="card-back">
-                    <p class="special">College life mein bunny banne ka sapna th avi bn ke rh gya.</p>
                 </div>
             </div>
-        </div>
-          <div class="speaker-card">
-            <div class="card-inner">
-                <div class="card-front">
-                    <div class="speaker-image">
-                        <img src="../IMAGES/Aryan-Raj.jpeg" alt="Speaker Image" />
+            <div class="speaker-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="speaker-image">
+                            <img src="../IMAGES/Pranav.png" alt="Speaker Image" />
+                        </div>
+                        <span class="speaker-name">Pranav Jain</span>
+                        <p class="speaker-position">Designer</p>
                     </div>
-                    <span class="speaker-name">Aryan Raj</span>
-                    <p class="speaker-position">Organizing Committee</p>
-                </div>
-                <div class="card-back">
-                    <p class="special">Make sure to have fun whenever it's possibe.(useful tip:- avoid DAC and ICC)</p>
+                    <div class="card-back">
+                        <p>Khali hath aaye the , Khali hath Jaenge</p>
+                    </div>
                 </div>
             </div>
-        </div>
-      <div class="speaker-card">
-        <div class="card-inner">
-            <div class="card-front">
-                <div class="speaker-image">
-                    <img src="../IMAGES/Harsh-Pal.jpg" alt="Speaker Image" />
+            <div class="speaker-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="speaker-image">
+                            <img src="../IMAGES/Divyansh-Mogra.jpg" alt="Speaker Image" />
+                        </div>
+                        <span class="speaker-name">Divyansh Mogra </span>
+                        <p class="speaker-position">Organizing Committee</p>
+                    </div>
+                    <div class="card-back">
+                        <p>to code or to sleep: you can only choose one</p>
+                    </div>
                 </div>
-                <span class="speaker-name">Harsh Pal</span>
-                <p class="speaker-position">Organizing Committee</p>
             </div>
-            <div class="card-back">
-                <p>The actual journey begins now..</p>
-            </div>
-        </div>
-    </div>
-    <div class="speaker-card">
-        <div class="card-inner">
-            <div class="card-front">
-                <div class="speaker-image">
-                    <img src="../IMAGES/Shubham.jpg" alt="Speaker Image" />
+            <div class="speaker-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="speaker-image">
+                            <img src="../IMAGES/Namit.jpg" alt="Speaker Image" />
+                        </div>
+                        <span class="speaker-name">Namit Bajaj</span>
+                        <p class="speaker-position">OT Lead</p>
+                    </div>
+                    <div class="card-back">
+                        <p class="special">College life mein bunny banne ka sapna th avi bn ke rh gya.</p>
+                    </div>
                 </div>
-                <span class="speaker-name">Shubham Yadav</span>
-                <p class="speaker-position">Organising Committee</p>
             </div>
-            <div class="card-back">
-                <p>quote voute me kya rkha h , jaakr IP padho</p>
-            </div>
-        </div>
-      </div>
-      <div class="speaker-card">
-        <div class="card-inner">
-            <div class="card-front">
-                <div class="speaker-image">
-                    <img src="../IMAGES/Abhinav-Mangla.jpg" alt="Speaker Image" />
+            <div class="speaker-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="speaker-image">
+                            <img src="../IMAGES/Aryan-Raj.jpeg" alt="Speaker Image" />
+                        </div>
+                        <span class="speaker-name">Aryan Raj</span>
+                        <p class="speaker-position">Organizing Committee</p>
+                    </div>
+                    <div class="card-back">
+                        <p class="special">Make sure to have fun whenever it's possibe.(useful tip:- avoid DAC and ICC)
+                        </p>
+                    </div>
                 </div>
-                <span class="speaker-name">Abhinav Mangla</span>
-                <p class="speaker-position">Organizing Committee</p>
             </div>
-            <div class="card-back">
-                <p>There is a time and place for everything, and it's college.</p>
-            </div>
-        </div>
-    </div>
-      <div class="speaker-card">
-        <div class="card-inner">
-            <div class="card-front">
-                <div class="speaker-image">
-                    <img src="../IMAGES/Rahul Dabas.jpg" alt="Speaker Image" />
+            <div class="speaker-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="speaker-image">
+                            <img src="../IMAGES/Harsh-Pal.jpg" alt="Speaker Image" />
+                        </div>
+                        <span class="speaker-name">Harsh Pal</span>
+                        <p class="speaker-position">Organizing Committee</p>
+                    </div>
+                    <div class="card-back">
+                        <p>The actual journey begins now..</p>
+                    </div>
                 </div>
-                <span class="speaker-name">Rahul Dabas</span>
-                <p class="speaker-position">Organizing Committee</p>
             </div>
-            <div class="card-back">
-                <p>Welcome! Enjoy, suffer and live out ur dreams! 😉</p>
+            <div class="speaker-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="speaker-image">
+                            <img src="../IMAGES/Shubham.jpg" alt="Speaker Image" />
+                        </div>
+                        <span class="speaker-name">Shubham Yadav</span>
+                        <p class="speaker-position">Organising Committee</p>
+                    </div>
+                    <div class="card-back">
+                        <p>quote voute me kya rkha h , jaakr IP padho</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-    <div class="speaker-card">
-      <div class="card-inner">
-          <div class="card-front">
-              <div class="speaker-image">
-                  <img src="../IMAGES/Aarushi.jpg" alt="Speaker Image" />
-              </div>
-              <span class="speaker-name">Aarushi Chawla</span>
-              <p class="speaker-position">Organizing Committee</p>
-          </div>
-          <div class="card-back">
-              <p>"cheen tapak dum dum"</p>
-          </div>
-      </div>
-  </div>
-  <div class="speaker-card">
-    <div class="card-inner">
-        <div class="card-front">
-            <div class="speaker-image">
-                <img src="../IMAGES/Vivaswan_Nawani.jpg" alt="Speaker Image" />
+            <div class="speaker-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="speaker-image">
+                            <img src="../IMAGES/Abhinav-Mangla.jpg" alt="Speaker Image" />
+                        </div>
+                        <span class="speaker-name">Abhinav Mangla</span>
+                        <p class="speaker-position">Organizing Committee</p>
+                    </div>
+                    <div class="card-back">
+                        <p>There is a time and place for everything, and it's college.</p>
+                    </div>
+                </div>
             </div>
-            <span class="speaker-name">Vivaswan</span>
-            <p class="speaker-position">Organizing Committee</p>
-        </div>
-        <div class="card-back">
-            <p class="special">IIITD is a place to discover yourself so embrace every opportunity, explore new paths, take risks and step out of your comfort zone!</p>
-        </div>
-    </div>
-</div>
-  <div class="speaker-card">
-    <div class="card-inner">
-        <div class="card-front">
-            <div class="speaker-image">
-                <img src="../IMAGES/Sushant-Gola.jpg" alt="Speaker Image" />
+            <div class="speaker-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="speaker-image">
+                            <img src="../IMAGES/Rahul Dabas.jpg" alt="Speaker Image" />
+                        </div>
+                        <span class="speaker-name">Rahul Dabas</span>
+                        <p class="speaker-position">Organizing Committee</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Welcome! Enjoy, suffer and live out ur dreams! 😉</p>
+                    </div>
+                </div>
             </div>
-            <span class="speaker-name">Sushant Gola</span>
-            <p class="speaker-position">Organizing Committee</p>
-        </div>
-        <div class="card-back">
-            <p>College life hai, yaar! Yahan lectures se zyada masti aur notes se zyada selfies hoti hain!</p>
-        </div>
-    </div>
-</div>
-<div class="speaker-card">
-  <div class="card-inner">
-      <div class="card-front">
-          <div class="speaker-image">
-              <img src="../IMAGES/Hitesh-kumar.jpg" alt="Speaker Image" />
-          </div>
-          <span class="speaker-name">Hitesh Kumar</span>
-          <p class="speaker-position">Organizing Committee</p>
-      </div>
-      <div class="card-back">
-          <p>Hostel and friends can teach all their is to learn in life</p>
-      </div>
-  </div>
-</div>
-<!-- <div class="speaker-card">
-  <div class="card-inner">
-      <div class="card-front">
-          <div class="speaker-image">
-              <img src="../IMAGES/Ekansh.jpg" alt="Speaker Image" />
-          </div>
-          <span class="speaker-name">Ekansh</span>
-          <p class="speaker-position">Organizing Committee</p>
-      </div>
-      <div class="card-back">
-          <p>Your default search engine!</p>
-      </div>
-  </div>
-</div> -->
-      
-     
-    </div>
-  </div>
-  <footer>
-    <div class="upper-images">
-      <div class="house">
-        <img src="../IMAGES/footer1.png" alt="house" />
-      </div>
-    </div>
-    <div class="gradient-background">
-      <div class="base">
-        <div class="footer-content">
-          <div class="footer-image">
-            <img class="iiitd-logo" src="../IMAGES/iiitdlogo1.png">
-            <div class="footer-text">
-              <p>Okhla Industrial Area Phase 3, Near Govindpuri Metro Station<br>New Delhi, Delhi, 110020</p>
+            <div class="speaker-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="speaker-image">
+                            <img src="../IMAGES/Aarushi.jpg" alt="Speaker Image" />
+                        </div>
+                        <span class="speaker-name">Aarushi Chawla</span>
+                        <p class="speaker-position">Organizing Committee</p>
+                    </div>
+                    <div class="card-back">
+                        <p>"cheen tapak dum dum"</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="footer-down">
-            <div class="footer-contact">
-              <p><i class="fa-solid fa-mobile"></i><span>Phone</span> +91-011-71985300, +91-011-26907400-7404</p>
-              <p><i class="fa-solid fa-envelope"></i><span>Mail</span> induction@iiitd.ac.in</p>
-              <p><i class="fa-solid fa-phone"></i><span>Fax</span> +91-11-26907405</p>
+            <div class="speaker-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="speaker-image">
+                            <img src="../IMAGES/Vivaswan_Nawani.jpg" alt="Speaker Image" />
+                        </div>
+                        <span class="speaker-name">Vivaswan</span>
+                        <p class="speaker-position">Organizing Committee</p>
+                    </div>
+                    <div class="card-back">
+                        <p class="special">IIITD is a place to discover yourself so embrace every opportunity, explore
+                            new paths, take risks and step out of your comfort zone!</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="design-and-developed-by">
-          <div class="developed-by">
-            <span>Developed By</span>
-            <p><a href="https://www.linkedin.com/in/sushant-arora-8a2a4828a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">Sushant </a><span>and</span> <a href="https://www.linkedin.com/in/shiv-chopra-2258081b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">Shiv Chopra</a></p>
+            <div class="speaker-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="speaker-image">
+                            <img src="../IMAGES/Sushant-Gola.jpg" alt="Speaker Image" />
+                        </div>
+                        <span class="speaker-name">Sushant Gola</span>
+                        <p class="speaker-position">Organizing Committee</p>
+                    </div>
+                    <div class="card-back">
+                        <p>College life hai, yaar! Yahan lectures se zyada masti aur notes se zyada selfies hoti hain!
+                        </p>
+                    </div>
+                </div>
             </div>
-          <div class="designed-by">
-          <span>Designed By</span>
-          <p><a href="https://www.linkedin.com/in/omansh-arora?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">Omansh Arora </a><span>and</span> <a href="https://www.behance.net/pranavjain29" target="_blank" rel="noopener noreferrer">Pranav Jain</a></p>
-          </div>
-          
-        </div>
-        <img class="footer-down-img" src="../IMAGES/footer-down-img.png" alt="">
-      </div>
+            <div class="speaker-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <div class="speaker-image">
+                            <img src="../IMAGES/Hitesh-kumar.jpg" alt="Speaker Image" />
+                        </div>
+                        <span class="speaker-name">Hitesh Kumar</span>
+                        <p class="speaker-position">Organizing Committee</p>
+                    </div>
+                    <div class="card-back">
+                        <p>Hostel and friends can teach all their is to learn in life</p>
+                    </div>
+                </div>
+            </div>
 
 
 
-
+        </div>
     </div>
-    </div>
-  </footer>
+    <footer>
+        <div class="upper-images">
+            <div class="house">
+                <a href="/Avatar_Page/index.html" style="text-decoration: none;color: white;" target="_blank">
+                    <button class="explore-button avatar_button">
+                      <i class="fa-solid fa-arrow-right arrow-left" style="margin-right: 2.3vw; margin-left: 1vw"></i>
+                      <span class="text"> Make Your Custom Avatar </span>
+                      <i class="fa-solid fa-arrow-right arrow-right" style="margin-left: 2.3vw; margin-right: 1vw"></i>
+                    </button>
+                  </a>
+                <img src="../IMAGES/footer1.png" alt="house" />
+            </div>
+        </div>
+        <div class="gradient-background">
+            <div class="base">
+                <div class="footer-content">
+                    <div class="footer-image">
+                        <img class="iiitd-logo" src="../IMAGES/iiitdlogo1.png">
+                        <div class="footer-text">
+                            <p>Okhla Industrial Area Phase 3, Near Govindpuri Metro Station<br>New Delhi, Delhi, 110020
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer-down">
+                        <div class="footer-contact">
+                            <p><i class="fa-solid fa-mobile"></i><span>Phone</span> +91-011-71985300,
+                                +91-011-26907400-7404</p>
+                            <p><i class="fa-solid fa-envelope"></i><span>Mail</span> induction@iiitd.ac.in</p>
+                            <p><i class="fa-solid fa-phone"></i><span>Fax</span> +91-11-26907405</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="design-and-developed-by">
+                    <div class="developed-by">
+                        <span>Developed By</span>
+                        <p><a href="https://www.linkedin.com/in/sushant-arora-8a2a4828a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                target="_blank" rel="noopener noreferrer">Sushant </a><span>and</span> <a
+                                href="https://www.linkedin.com/in/shiv-chopra-2258081b9?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                target="_blank" rel="noopener noreferrer">Shiv Chopra</a></p>
+                    </div>
+                    <div class="designed-by">
+                        <span>Designed By</span>
+                        <p><a href="https://www.linkedin.com/in/omansh-arora?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                                target="_blank" rel="noopener noreferrer">Omansh Arora </a><span>and</span> <a
+                                href="https://www.behance.net/pranavjain29" target="_blank"
+                                rel="noopener noreferrer">Pranav Jain</a></p>
+                    </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const cardInners = document.querySelectorAll('.card-inner');
-        const mediaQuery = window.matchMedia('(max-width: 768px)');
-    
-        cardInners.forEach((cardInner, index) => {
-            cardInner.id = `cardInner${index}`;
-            cardInner.classList.add('flipped');
-    
-            cardInner.addEventListener('click', function() {
-                if (mediaQuery.matches) {
-                    cardInner.classList.toggle('flipped');
-                }
+                </div>
+                <img class="footer-down-img" src="../IMAGES/footer-down-img.png" alt="">
+            </div>
+
+
+
+
+        </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const cardInners = document.querySelectorAll('.card-inner');
+            const mediaQuery = window.matchMedia('(max-width: 768px)');
+
+            cardInners.forEach((cardInner, index) => {
+                cardInner.id = `cardInner${index}`;
+                cardInner.classList.add('flipped');
+
+                cardInner.addEventListener('click', function () {
+                    if (mediaQuery.matches) {
+                        cardInner.classList.toggle('flipped');
+                    }
+                });
             });
         });
-    });
     </script>
 </body>
 

@@ -146,6 +146,22 @@ header h1 {
     z-index: 5;
 }
 
+.Beard{
+    width: 0.715vw;
+    transform: scale(2.5);    
+    position: absolute;
+    top: 12.4vw;
+    left: 5.97vw;
+    z-index: 3;
+}
+.Accessory{
+    width: 1.001vw;
+    transform: scale(2.5);
+    position: absolute;
+    top: 11.8vw;
+    left: 5.75vw;
+    z-index: 10;
+}
 .Body{
     width: 4.202vw;
     position: absolute;
@@ -214,5 +230,18 @@ header h1 {
         top: 218.18px;
         transform: scale(2.5);
     
+    }
+    .Beard{
+        width: 8.82px;
+        transform: scale(2.5);
+        top: 155.44px;
+        left: 73.784px;
+
+    }
+    .Accessory{
+        width: 12.35px;
+        transform: scale(2.5);
+        top: 146px;
+        left: 71px;
     }
 }
