@@ -835,6 +835,9 @@ footer{
         font-size: 3vw;
         width: 23vw;
     }
+    .explore-button .text{
+        width: 17vw;
+    }
 }
 
 @keyframes enter-animation {

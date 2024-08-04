@@ -120,6 +120,28 @@
     flex-direction: column;
 }
 
+.live-button {
+    /* display: inline-block; */
+    margin-left: 3vw;
+    padding: 0.33vw 0.66vw;
+    border-radius: 0.69vw;
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 1.7vw;
+    cursor: pointer;
+    vertical-align: middle;
+    height: 2vw;
+    position: absolute;
+    top: 4vw;
+    left: 68vw;
+    padding-bottom: 2.2vw;
+}
+
+.live-button:hover {
+    background-color: darkred; /* Darker background on hover */
+}
+
 @media (max-width:768px){
     .outer-schedule-container {
         margin-top: 25vw;
